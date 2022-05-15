@@ -1,0 +1,298 @@
+@font-face {
+    font-family: "MinSans-Medium";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* normalizing */
+* {
+    font-family: "MinSans-Medium", "inter";
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+ul,
+ol,
+dd,
+li,
+dt {
+    list-style: none;
+}
+/* swiper 속성 */
+.container,
+.container > .swiper-wrapper > .swiper-slide {
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+/* slide01의 Video 속성 */
+.container > .swiper-wrapper > .slide01 > .MainVideo {
+    width: auto;
+    height: auto;
+}
+.container > .swiper-wrapper > .slide01 > .MainVideo > video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+    z-index: -1;
+}
+/* slide01 속성 */
+.container > .swiper-wrapper > .slide01 > .textArea {
+    position: relative;
+    top: 69%;
+    left: 9%;
+    z-index: 1;
+}
+.container > .swiper-wrapper > .slide01 > .textArea * {
+    font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
+}
+.container > .swiper-wrapper > .slide01 > .textArea > .mainTitle > p {
+    font-size: 80px;
+}
+.container > .swiper-wrapper > .slide01 > .textArea > .subTitle > p {
+    font-size: 38px;
+    margin-left: 4px;
+}
+
+/* slide02 속성 */
+.container > .swiper-wrapper > .slide02 {
+    /* 크기조절 예정 */
+    /* test */
+    /* height: 39vh !important; */
+}
+.container > .swiper-wrapper > .slide02 > .textArea {
+    /* 위치조정 예정 */
+    position: relative;
+    text-align: center;
+    top: 50%;
+}
+.container > .swiper-wrapper > .slide02 > .textArea > .mainTitle p {
+    font-size: 30px;
+    color: #1a5c3b;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.container > .swiper-wrapper > .slide02 > .textArea > .subTitle p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 21px;
+}
+
+/* slide03 속성 */
+.container > .swiper-wrapper > .slide03 > .MainPic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.container > .swiper-wrapper > .slide03 > .MainPic > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
+}
+.container > .swiper-wrapper > .slide03 > .textArea {
+    position: relative;
+    left: 9%;
+    top: 8.3%;
+}
+.container > .swiper-wrapper > .slide03 > .textArea * {
+    color: #ffffff;
+    font-style: normal;
+    position: relative;
+}
+.container > .swiper-wrapper > .slide03 > .textArea > .topTitle {
+    margin-bottom: 39.95%;
+}
+.container > .swiper-wrapper > .slide03 > .textArea > .topTitle > p {
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+.container > .swiper-wrapper > .slide03 > .textArea > .mainTitle {
+    margin-bottom: 8px;
+}
+.container > .swiper-wrapper > .slide03 > .textArea > .mainTitle > p {
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 700;
+}
+.container > .swiper-wrapper > .slide03 > .textArea > .subTitle > p {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+/* slide04 속성 */
+.container > .swiper-wrapper > .slide04 > .mainTitle {
+    position: relative;
+    top: 10%;
+    left: 9.01%;
+}
+.container > .swiper-wrapper > .slide04 > .mainTitle > p {
+    color: #907127;
+    font-size: 48px;
+    line-height: 48px;
+}
+/* slide04 내부 슬라이드 속성 */
+.container > .swiper-wrapper > .slide04 > .container2 {
+    position: relative;
+    left: 9.1%;
+    top: 18%;
+}
+.container > .swiper-wrapper > .slide04 > .container2 .sportPic {
+    width: 600px;
+    height: 600px;
+    margin: 0;
+}
+.container > .swiper-wrapper > .slide04 > .container2 .sportPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container > .swiper-wrapper > .slide04 > .container2 .textArea > .mainTitle {
+    margin-top: 36px;
+    margin-bottom: 6px;
+}
+.container > .swiper-wrapper > .slide04 > .container2 .textArea > .mainTitle p {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 24px;
+    color: #242424;
+}
+.container > .swiper-wrapper > .slide04 > .container2 .textArea > .subTitle p {
+    font-size: 16px;
+    color: #242424;
+}
+
+/* slide05 속성 */
+.container > .swiper-wrapper > .slide05 {
+    background-color: #907127;
+}
+.container > .swiper-wrapper > .slide05 > .mainTitle {
+    position: relative;
+    top: 10%;
+    left: 9.01%;
+}
+.container > .swiper-wrapper > .slide05 > .mainTitle > p {
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 48px;
+}
+.container > .swiper-wrapper > .slide05 > .container3 {
+    position: relative;
+    left: 9.1%;
+    top: 18%;
+}
+.container > .swiper-wrapper > .slide05 > .container3 .ArtPic {
+    width: 600px;
+    height: 600px;
+    margin: 0;
+}
+.container > .swiper-wrapper > .slide05 > .container3 .ArtPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container > .swiper-wrapper > .slide05 > .container3 .textArea > .mainTitle {
+    margin-top: 36px;
+    margin-bottom: 6px;
+}
+.container > .swiper-wrapper > .slide05 > .container3 .textArea > .mainTitle p {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 24px;
+    color: #ffffff;
+}
+.container > .swiper-wrapper > .slide05 > .container3 .textArea > .subTitle p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* slide06 속성 */
+.container > .swiper-wrapper > .slide06 > .MainPic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.container > .swiper-wrapper > .slide06 > .MainPic > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
+}
+.container > .swiper-wrapper > .slide06 > .textArea {
+    position: relative;
+    left: 9%;
+    top: 8.3%;
+}
+.container > .swiper-wrapper > .slide06 > .textArea * {
+    color: #ffffff;
+    font-style: normal;
+    position: relative;
+}
+.container > .swiper-wrapper > .slide06 > .textArea > .topTitle {
+    margin-bottom: 39.95%;
+}
+.container > .swiper-wrapper > .slide06 > .textArea > .topTitle > p {
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+.container > .swiper-wrapper > .slide06 > .textArea > .mainTitle {
+    margin-bottom: 8px;
+}
+.container > .swiper-wrapper > .slide06 > .textArea > .mainTitle > p {
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 700;
+}
+.container > .swiper-wrapper > .slide06 > .textArea > .subTitle > p {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+/* slide07 속성 */
+.container > .swiper-wrapper > .slide07 > .TitleArea {
+    position: relative;
+    top: 5.56%;
+    left: 9.01%;
+}
+.container > .swiper-wrapper > .slide07 > .TitleArea > .topTitle {
+    margin-bottom: 8px;
+}
+.container > .swiper-wrapper > .slide07 > .TitleArea > .topTitle > p {
+    color: #907127;
+    font-size: 48px;
+    line-height: 48px;
+    line-height: 64px;
+}
+.container > .swiper-wrapper > .slide07 > .TitleArea > .subTitle > p {
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    font-size: 24px;
+    color: #242424;
+}
+.container > .swiper-wrapper > .slide07 > .MainPic {
+    width: 100%;
+    height: 63.57%;
+    margin-top: 4.63%;
+}
+.container > .swiper-wrapper > .slide07 > .MainPic > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

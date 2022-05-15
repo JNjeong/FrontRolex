@@ -1,0 +1,68 @@
+/* 슬라이드 pagination 속성 */
+.swiper-pagination {
+    background-color: #fff !important;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background-color: #1a5c3b;
+}
+.swiper-container-horizontal
+    > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper-container-vertical > .swiper-pagination-progressbar {
+    height: 18.51%;
+    position: fixed;
+    top: 40%;
+    left: 93.23%;
+}
+.fraction {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 36.5% !important;
+    left: 92.82%;
+    background-color: transparent !important;
+    visibility: hidden;
+}
+.swiper-pagination-current::before {
+    content: "0";
+    color: #e9e9e9;
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 700;
+}
+.swiper-pagination-current {
+    visibility: visible;
+    color: #e9e9e9;
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 700;
+}
+.fraction_total {
+    position: fixed;
+    top: 59%;
+    left: 92.82%;
+    z-index: 2;
+}
+.fraction_total p {
+    color: #e9e9e9;
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 700;
+}
+.swiper-button-prev {
+    background: url("../../resources/prev.png") no-repeat center !important;
+    left: 2.12% !important;
+}
+.swiper-button-next {
+    background: url("../../resources/next.png") no-repeat center !important;
+    left: 66% !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    width: 35px !important;
+    height: 35px !important;
+    background-size: 35px 35px !important;
+    object-fit: cover;
+    position: absolute !important;
+    top: 50% !important;
+    z-index: 10 !important;
+}
