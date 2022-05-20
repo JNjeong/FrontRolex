@@ -15,11 +15,6 @@ body {
   margin: 0;
   padding: 0;
 }
-#container {
-  width: 100%;
-  height: 600px;
-  background-color: #b9b9b9;
-}
 
 .clear::after {
   /* 가상으로 요소를 만들고 걔를 clear시켜 다음것부터는 정상적으로 배치되도록 해줌 */
@@ -53,7 +48,7 @@ nav ul li {
 /*-------------- 네비게이션 바 투명일 때 --------------*/
 header > .header_area > h1 > a {
   display: block;
-  background: url(../images/롤렉스로고_white.png);
+  background: url(../resources/롤렉스로고_white.png);
   width: 62px;
   height: 35px;
   position: absolute;
@@ -81,7 +76,7 @@ header > .header_area > h1 > a {
   cursor: pointer;
   float: right;
   display: block;
-  background: url(../images/Menu.png);
+  background: url(../resources/Menu.png);
   position: absolute;
   width: 25px;
   height: 17px;
@@ -113,7 +108,7 @@ header > .header_area > h1 > a {
 }
 
 .header_area:hover h1 > a {
-  background: url(../images/롤렉스로고.png);
+  background: url(../resources/롤렉스로고.png);
 }
 
 .header_area:hover .menu {
@@ -126,9 +121,7 @@ header > .header_area > h1 > a {
 }
 
 /*----------------------- 메뉴 바 -----------------------*/
-/* #sub_menu > a {
-  color: white;
-} */
+
 #sub_menu:hover a {
   color: white;
 }
@@ -138,7 +131,7 @@ header > .header_area > h1 > a {
 }
 .top > a:first-child {
   display: block;
-  background: url(../images/롤렉스로고_menu.png) no-repeat center;
+  background: url(../resources/롤렉스로고_menu.png) no-repeat center;
   width: 73px;
   height: 45px;
   text-indent: -9999px;
@@ -150,7 +143,7 @@ header > .header_area > h1 > a {
 }
 .top > a:last-child {
   display: block;
-  background: url(../images/나가기_icon.png) no-repeat center;
+  background: url(../resources/나가기_icon.png) no-repeat center;
   width: 25px;
   height: 25px;
   text-indent: -9999px;
@@ -182,7 +175,7 @@ input:focus {
 }
 .search {
   display: block;
-  background: url(../images/돋보기.png) no-repeat center;
+  background: url(../resources/돋보기.png) no-repeat center;
   width: 20px;
   height: 20px;
   text-indent: -9999px;
@@ -192,7 +185,7 @@ input:focus {
 }
 .selection {
   display: block;
-  background: url(../images/하트.png) no-repeat center;
+  background: url(../resources/하트.png) no-repeat center;
   width: 22px;
   height: 20px;
   text-indent: -9999px;
@@ -327,7 +320,7 @@ input:focus {
 
 .share_btn {
   display: block;
-  background: url(../images/share.png) no-repeat center;
+  background: url(../resources/share.png) no-repeat center;
   width: 18px;
   height: 18px;
   text-indent: -9999px;
@@ -372,14 +365,14 @@ footer > .foot_area {
 }
 .share_image > li:first-child > a {
   display: block;
-  background: url(../images/트위터.png) no-repeat center;
+  background: url(../resources/트위터.png) no-repeat center;
   width: 46px;
   height: 46px;
   margin-right: 25px;
 }
 .share_image > li:first-child > a:hover {
   display: block;
-  background: url(../images/트위터_green.png);
+  background: url(../resources/트위터_green.png);
   width: 46px;
   height: 46px;
   transition: 0.6s;
@@ -387,14 +380,14 @@ footer > .foot_area {
 
 .share_image > li:nth-child(2) > a {
   display: block;
-  background: url(../images/facebook.PNG) no-repeat center;
+  background: url(../resources/facebook.PNG) no-repeat center;
   width: 46px;
   height: 46px;
   margin-right: 25px;
 }
 .share_image > li:nth-child(2) > a:hover {
   display: block;
-  background: url(../images/facebook_green.png) no-repeat center;
+  background: url(../resources/facebook_green.png) no-repeat center;
   width: 46px;
   height: 46px;
   transition: 0.6s;
@@ -402,14 +395,14 @@ footer > .foot_area {
 
 .share_image > li:nth-child(3) > a {
   display: block;
-  background: url(../images/pinterest.PNG) no-repeat center;
+  background: url(../resources/pinterest.PNG) no-repeat center;
   width: 46px;
   height: 46px;
   margin-right: 25px;
 }
 .share_image > li:nth-child(3) > a:hover {
   display: block;
-  background: url(../images/pinterest_green.png) no-repeat center;
+  background: url(../resources/pinterest_green.png) no-repeat center;
   width: 46px;
   height: 46px;
   transition: 0.6s;
@@ -417,14 +410,14 @@ footer > .foot_area {
 
 .share_image > li:nth-child(4) > a {
   display: block;
-  background: url(../images/링크드인.PNG) no-repeat center;
+  background: url(../resources/링크드인.PNG) no-repeat center;
   width: 46px;
   height: 46px;
   margin-right: 25px;
 }
 .share_image > li:nth-child(4) > a:hover {
   display: block;
-  background: url(../images/링크드인_green.png) no-repeat center;
+  background: url(../resources/링크드인_green.png) no-repeat center;
   width: 46px;
   height: 46px;
   transition: 0.6s;
@@ -432,14 +425,14 @@ footer > .foot_area {
 
 .share_image > li:nth-child(5) > a {
   display: block;
-  background: url(../images/mail.PNG) no-repeat center;
+  background: url(../resources/mail.PNG) no-repeat center;
   width: 46px;
   height: 46px;
   margin-right: 25px;
 }
 .share_image > li:nth-child(5) > a:hover {
   display: block;
-  background: url(../images/mail_green.png) no-repeat center;
+  background: url(../resources/mail_green.png) no-repeat center;
   width: 46px;
   height: 46px;
   transition: 0.6s;
@@ -447,13 +440,13 @@ footer > .foot_area {
 
 .share_image > li:nth-child(6) > a {
   display: block;
-  background: url(../images/더보기.PNG) no-repeat center;
+  background: url(../resources/더보기.PNG) no-repeat center;
   width: 46px;
   height: 46px;
 }
 .share_image > li:nth-child(6) > a:hover {
   display: block;
-  background: url(../images/더보기_green.png) no-repeat center;
+  background: url(../resources/더보기_green.png) no-repeat center;
   width: 46px;
   height: 46px;
   transition: 0.6s;
@@ -543,7 +536,7 @@ footer > .foot_area {
   display: block;
   text-indent: -9999px;
   overflow: hidden;
-  background: url(../images/맨위로가기_icon.png) no-repeat center;
+  background: url(../resources/맨위로가기_icon.png) no-repeat center;
   padding-top: 23px;
 }
 .fb_list > li:last-child > a:hover {
