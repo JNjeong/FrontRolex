@@ -1,0 +1,554 @@
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  background-color: #242424;
+  height: 1020px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  width: 100%;
+  height: 600px;
+  background-color: #b9b9b9;
+}
+
+.clear::after {
+  /* 가상으로 요소를 만들고 걔를 clear시켜 다음것부터는 정상적으로 배치되도록 해줌 */
+  content: "";
+  display: block;
+  clear: both;
+}
+/*-------------------- header 시작 --------------------*/
+header {
+  position: absolute;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 100;
+  transition: 300;
+}
+header > .header_area > h1 {
+  float: left;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.gnb {
+  display: flex; /* 네비게이션 바 전부 다 한줄에 배치 */
+}
+
+/*-------------- 네비게이션 바 투명일 때 --------------*/
+header > .header_area > h1 > a {
+  display: block;
+  background: url(../images/롤렉스로고_white.png);
+  width: 62px;
+  height: 35px;
+  position: absolute;
+  top: 25%;
+  left: 100px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.header_area > nav {
+  margin-left: 600px;
+}
+
+.dropdown {
+  height: 75px;
+  line-height: 75px;
+}
+
+.dropdown > a {
+  margin-right: 120px;
+  color: white;
+}
+
+.menu {
+  cursor: pointer;
+  float: right;
+  display: block;
+  background: url(../images/Menu.png);
+  position: absolute;
+  width: 25px;
+  height: 17px;
+  top: 32px;
+  right: 100px;
+  text-indent: -9999px;
+  overflow: hidden;
+  filter: invert(100%) sepia(5%) saturate(7449%) hue-rotate(265deg)
+    brightness(107%) contrast(112%);
+}
+.menu:hover {
+  filter: invert(29%) sepia(6%) saturate(4158%) hue-rotate(97deg)
+    brightness(96%) contrast(93%);
+}
+
+/*------------- 네비게이션 바 하얀색일 때 -------------*/
+.header_area {
+  transition: background, 0.8s;
+}
+.header_area:hover {
+  background: white;
+}
+.header_area:hover a {
+  color: #242424;
+}
+
+.dropdown > a:hover {
+  color: #1a5c3b;
+}
+
+.header_area:hover h1 > a {
+  background: url(../images/롤렉스로고.png);
+}
+
+.header_area:hover .menu {
+  filter: invert(8%) sepia(25%) saturate(0%) hue-rotate(202deg) brightness(109%)
+    contrast(89%);
+}
+.header_area .menu:hover {
+  filter: invert(26%) sepia(17%) saturate(1717%) hue-rotate(97deg)
+    brightness(97%) contrast(87%);
+}
+
+/*----------------------- 메뉴 바 -----------------------*/
+/* #sub_menu > a {
+  color: white;
+} */
+#sub_menu:hover a {
+  color: white;
+}
+
+.top {
+  display: flex;
+}
+.top > a:first-child {
+  display: block;
+  background: url(../images/롤렉스로고_menu.png) no-repeat center;
+  width: 73px;
+  height: 45px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-left: 323px;
+  margin-top: 60px;
+  margin-right: 204px;
+  margin-bottom: 55px;
+}
+.top > a:last-child {
+  display: block;
+  background: url(../images/나가기_icon.png) no-repeat center;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.give_mg {
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-bottom: 94px;
+}
+
+.middle_1 > p > input {
+  border: none;
+  background: none;
+  color: #c4c4c4;
+  font-size: 15px;
+  border-bottom: 1px solid #6b6b6b;
+  width: 299px;
+  padding-bottom: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+.middle_1 {
+  display: flex;
+}
+.search {
+  display: block;
+  background: url(../images/돋보기.png) no-repeat center;
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-right: 13px;
+  margin-left: 8px;
+}
+.selection {
+  display: block;
+  background: url(../images/하트.png) no-repeat center;
+  width: 22px;
+  height: 20px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.marker {
+  font-size: 10px;
+  color: #c4c4c4;
+}
+.marker > img {
+  margin-right: 8px;
+}
+.middle_2 {
+  margin: 0px;
+}
+
+.watch_1 {
+  display: flex;
+  margin-bottom: 9px;
+}
+.watch_1 > li:first-child {
+  margin-right: 8px;
+}
+
+.watch_2 {
+  display: flex;
+}
+.watch_2 > li:first-child {
+  margin-right: 8px;
+}
+.watch_text {
+  position: absolute;
+  left: 12px;
+  bottom: 19px;
+  width: 160px;
+  height: 28px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #b9b9b9;
+}
+.watch_text > p:first-child {
+  font-size: 15px;
+}
+.watch_text > p:last-child {
+  font-size: 11px;
+}
+.right {
+  left: 195px;
+}
+
+.watch_1 {
+  position: relative;
+}
+
+.watch_2 {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.plus_bar_:nth-child(-n + 3) {
+  width: 359px;
+  border-bottom: 1px solid #6b6b6b;
+  padding-bottom: 13px;
+}
+.plus_bar_ > a {
+  color: white;
+  font-size: 13px;
+}
+.plus_bar_ > li > a {
+  color: white;
+  font-size: 13px;
+}
+.plus_bar_:nth-child(n + 2):nth-child(-n + 4) {
+  margin-top: 13px;
+}
+
+.color_ {
+  padding-bottom: 13px;
+}
+
+.bottom > p > a {
+  color: white;
+}
+
+/*--------------------- 메뉴 바(나의 셀렉션) ---------------------*/
+#selection_area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 1080px;
+  z-index: 1003;
+  background-color: #242424;
+  overflow-x: hidden;
+  transition: 0.8s;
+}
+
+#sub_menu {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 0px; /* width를 0,overflow-x를 hidden으로 주고 js에서 width조정해주면 슬라이드 효과까지 가능! + transition */
+  height: 100%;
+  overflow-y: auto;
+  background-color: #242424;
+  overflow-x: hidden; /* 이래야 처음에 안보임 */
+  z-index: 1002;
+  transition: 0.8s;
+}
+
+.hidden {
+  /* 메뉴바 클릭 시 다른부분 스크롤 안되게 하는 함수 */
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+.black_background {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #484747;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  filter: alpha(opacity=60);
+}
+
+.share_btn {
+  display: block;
+  background: url(../images/share.png) no-repeat center;
+  width: 18px;
+  height: 18px;
+  text-indent: -9999px;
+  overflow: hidden;
+  /* margin-right: 13px; */
+  margin-left: 30px;
+}
+
+.watch_1 {
+  margin-top: 60px;
+}
+
+/*-------------------- footer 시작 --------------------*/
+footer {
+  width: 100%;
+  background-color: #242424;
+  /* position: fixed;  이거 하면 스크롤 안내리고 고정됨 */
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: block;
+}
+footer > .foot_area {
+  margin-bottom: 0;
+}
+
+.share {
+  background-color: #e9e9e9;
+  text-align: center;
+  padding-top: 97px;
+  height: 203px;
+}
+.share > h2 {
+  color: #242424;
+  margin-bottom: 33px;
+}
+.share_image {
+  display: flex;
+  margin-left: 630px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.share_image > li:first-child > a {
+  display: block;
+  background: url(../images/트위터.png) no-repeat center;
+  width: 46px;
+  height: 46px;
+  margin-right: 25px;
+}
+.share_image > li:first-child > a:hover {
+  display: block;
+  background: url(../images/트위터_green.png);
+  width: 46px;
+  height: 46px;
+  transition: 0.6s;
+}
+
+.share_image > li:nth-child(2) > a {
+  display: block;
+  background: url(../images/facebook.PNG) no-repeat center;
+  width: 46px;
+  height: 46px;
+  margin-right: 25px;
+}
+.share_image > li:nth-child(2) > a:hover {
+  display: block;
+  background: url(../images/facebook_green.png) no-repeat center;
+  width: 46px;
+  height: 46px;
+  transition: 0.6s;
+}
+
+.share_image > li:nth-child(3) > a {
+  display: block;
+  background: url(../images/pinterest.PNG) no-repeat center;
+  width: 46px;
+  height: 46px;
+  margin-right: 25px;
+}
+.share_image > li:nth-child(3) > a:hover {
+  display: block;
+  background: url(../images/pinterest_green.png) no-repeat center;
+  width: 46px;
+  height: 46px;
+  transition: 0.6s;
+}
+
+.share_image > li:nth-child(4) > a {
+  display: block;
+  background: url(../images/링크드인.PNG) no-repeat center;
+  width: 46px;
+  height: 46px;
+  margin-right: 25px;
+}
+.share_image > li:nth-child(4) > a:hover {
+  display: block;
+  background: url(../images/링크드인_green.png) no-repeat center;
+  width: 46px;
+  height: 46px;
+  transition: 0.6s;
+}
+
+.share_image > li:nth-child(5) > a {
+  display: block;
+  background: url(../images/mail.PNG) no-repeat center;
+  width: 46px;
+  height: 46px;
+  margin-right: 25px;
+}
+.share_image > li:nth-child(5) > a:hover {
+  display: block;
+  background: url(../images/mail_green.png) no-repeat center;
+  width: 46px;
+  height: 46px;
+  transition: 0.6s;
+}
+
+.share_image > li:nth-child(6) > a {
+  display: block;
+  background: url(../images/더보기.PNG) no-repeat center;
+  width: 46px;
+  height: 46px;
+}
+.share_image > li:nth-child(6) > a:hover {
+  display: block;
+  background: url(../images/더보기_green.png) no-repeat center;
+  width: 46px;
+  height: 46px;
+  transition: 0.6s;
+}
+
+.foot_list {
+  color: white;
+  padding-top: 119px;
+  height: 420px;
+  display: flex;
+  margin-left: 300px;
+}
+
+.foot_item > li > a {
+  color: white;
+}
+.foot_item > li > a:hover {
+  color: #907127;
+}
+.fb_list > li > a {
+  color: white;
+}
+.fb_list > li > a:hover {
+  color: #907127;
+}
+
+.foot_item {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 13px;
+}
+
+.foot_content {
+  padding-bottom: 105px;
+}
+.foot_cont:first-child {
+  margin-right: 120px;
+}
+
+.foot_cont:nth-child(2) {
+  margin-right: 120px;
+}
+
+.foot_item > li {
+  margin-bottom: 12px;
+}
+
+.news_room:hover {
+  filter: invert(42%) sepia(45%) saturate(680%) hue-rotate(4deg) brightness(95%)
+    contrast(84%);
+}
+.news_room > a > img {
+  padding-right: 12px;
+}
+.plus_bar {
+  width: 300px;
+  border-bottom: 1px solid #6b6b6b;
+  font-size: 13px;
+  padding-bottom: 12px;
+}
+.foot_bottom {
+  display: block;
+  padding-top: 105px;
+  height: 150px;
+}
+.fb_list > li:nth-child(2) {
+  width: 100%;
+  border-bottom: 1px solid #6b6b6b;
+  padding-top: 23px;
+}
+.fb_list1 {
+  padding-top: 5px;
+}
+.fb_list1 > a {
+  margin-left: 300px;
+  font-size: 13px;
+}
+.fb_list1 > a > img {
+  padding-right: 12px;
+}
+.fb_list1:hover {
+  filter: invert(42%) sepia(45%) saturate(680%) hue-rotate(4deg) brightness(95%)
+    contrast(84%);
+}
+
+.fb_list > li:last-child > a {
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url(../images/맨위로가기_icon.png) no-repeat center;
+  padding-top: 23px;
+}
+.fb_list > li:last-child > a:hover {
+  filter: invert(42%) sepia(45%) saturate(680%) hue-rotate(4deg) brightness(95%)
+    contrast(84%);
+  transition: 0.6s;
+}
+/*-------------------- footer 끝 --------------------*/
