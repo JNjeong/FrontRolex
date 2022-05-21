@@ -1,0 +1,337 @@
+@font-face {
+  font-family: 'MinSans-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MinSans-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 공통부분 */
+body{
+  font-family: 'MinSans-Regular';
+  width: 100vw !important;
+  height: 100vh !important;
+
+  color:#242424;
+  white-space: normal;
+  word-break: normal;
+  word-wrap: break-word;
+  line-height: 1;
+  letter-spacing: -1px;}
+
+*{
+  box-sizing: border-box;
+  margin:0 auto;
+  padding:0;
+}
+
+ul,ol,dd,li,dt {list-style: none;}
+
+a{ text-decoration: none; color: #242424;}
+
+.swiper-slide{ 
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+/* 매장 안내 버튼 */
+#modal_btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 50px 0;
+  /* margin-left: -10px; */
+}
+
+#modal_btn p{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#modal_btn p:hover {
+  color: #1A5C3B; 
+}
+
+.storeBtn p:active {
+  color: #1A5C3B;
+}
+.modal_close{
+  width: 60px;
+  position: absolute;
+  transform: translate(0%, -400%);
+}
+.modal_close > a{
+  font-size: 18px;
+  opacity: -100%;
+}
+/* 매장 안내 팝업창 시작 */
+.modal_wrapper{
+  position: relative;
+  padding-left: 180px;
+  padding-right: 180px;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+.black_bg{
+  display: none;
+  position: absolute;
+  content: "";
+  width:100%;
+  height: 100%;
+  background-color:rgba(255, 255, 255, 100);
+  z-index: 1;
+}
+.modal_wrap{
+  display: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color:rgba(255, 255, 255, 100);
+  z-index: 2;
+}
+
+
+.storeList{
+  margin: 10px auto;
+}
+
+.store {
+  padding: 60px;
+  background: #F2F2F2;
+  width: 320px;
+  height: 100%;
+  float: left;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  margin-right: 30px;
+  box-sizing: border-box;
+}
+
+.tit{
+  font-family: 'MinSans-bold' !important;
+  width: 210px;
+  color: #1A5C3B;
+  border: 0.5px solid #1A5C3B;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-size: 16px;
+  line-height: 30PX;
+}
+.storeAd{ font-size: 14px; }
+.storeAd > p { 
+  margin-left: 5px;
+  margin-bottom: 5px; }
+.storeAd > span { 
+    margin-left: 5px;
+    margin-bottom: 5px; }
+
+
+/* 매장 안내 팝업창 끝 */
+
+/* 슬라이드 01 시작 */
+.swiper-slides {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.slide01{ 
+  padding-left: 180px;
+  padding-right: 180px;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.search-container{
+  width: 100%;
+  height: 80%;
+  margin-top: 140px;
+}
+.searchBox{
+  width: 33%;
+  height: 40%;
+  float: left;
+  margin-top: 90px;
+}
+
+/* 공식판매점 타이틀 */
+.searchTit{
+  font-family: 'MinSans-bold' !important;
+  font: 60px bold;
+  position: absolute;
+  width: 40%;
+  color: #1A5C3B;
+}
+
+/* 검색창 디자인 시작 */
+.sc1{
+  width: 100%;
+  height: 40px;
+  margin-top: 200px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.sc2{
+  border: none;
+  font-size: 23px;
+}
+
+/* 검색창 화살표 시작 */
+.scBtn{
+  position: relative;
+  float: right;
+  margin-bottom: 100px;
+}
+.scBtn-arrow{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transform: translate(0%, -130%);
+}
+.scBtn-arrow > svg {
+  width: 30px;
+  height: 30px;
+  transform: rotate(180deg);
+  fill: #907127;
+  }
+
+.scBtn-arrow > svg:hover{ fill: #1A5C3B; }
+/* 검색창 화살표 끝 */
+
+/* 내 위치 찾기 시작 */
+.scMysite{
+  width: 40%;
+  height: 30px;
+  margin-top: 15px;
+  float: left;
+}
+.markBtn{
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #907127;
+  fill: #907127;
+  transform: translate(%, 0%);
+}
+.markIcon{
+ vertical-align: -0.15em;
+}
+.markBtn:hover{ 
+color: #1A5C3B;
+ fill: #1A5C3B;
+}
+
+/* 검색창 디자인 끝 */
+/* 구글지도 디자인 */
+.googleMap{
+  width: 55%;
+  height: 100%;
+  float: right;
+}
+/* 슬라이드 01 끝 */
+
+
+/* 슬라이드 02 시작 */
+
+.slide02
+{ width: 100vw !important;
+  height: 100vh !important;
+}
+.text{
+  padding:180px;
+}
+.textTit{
+  font-family: 'MinSans-bold' !important;
+  font: 30px bold;
+  display: inline-block;
+  width: 100%;
+  color: #1A5C3B;
+  margin-bottom: 25px;
+}
+.textSub{
+  font: 16px;
+  display: inline-block;
+  width: 100%;
+  color: #242424;
+  line-height: 27px;
+}
+/* 하단 구매하기 이미지 영역 */
+.buyArea{
+  position: relative;
+  width: 100%;
+  height: 450px !important;
+  overflow: hidden;
+}
+
+/* 하단 구매하기 이미지 */
+.img-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-BKbox{
+  background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+}
+
+/* 하단 이미지 마우스 오버시 확대효과 */
+.img-container{
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 1s ease-in-out;
+}
+.img-container:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/* 하단 이미지 텍스트 */
+.buyText{
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+	transform: translate( -50%, -25% );
+  text-align: center;
+}
+.buyTit{
+  font-weight: 600;
+  font-size:32px;
+  color: #ffff;
+}
+.buybtn2{
+  width: 00px;
+  height: 40px;
+  padding: 5px 40px 5px 40px;
+  font-size:18px;
+  color: #ffff;
+  line-height: 80px;
+  text-align: center;
+  border: solid 0.5px #ffff;;
+  border-radius: 25px;
+}
+.buybtn2:hover{
+  background-color: #ffff;
+  color: #1A5C3B;
+}

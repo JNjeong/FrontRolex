@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>롤렉스 공식 판매점 - 대한민국</title>
+
+  <link rel="shortcut icon" href="../resources/favicon.ico"/>
+  <link rel="stylesheet" href="../css/mappage.css" />
+  <link rel="stylesheet" href="../swiper/css/swiper.min.css" />
+  <link rel="stylesheet" href="../css/map_headerfooter.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../js/headerfooter.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header_area clear" style="white-space: nowrap;">
+          <h1><a href="./index.html">Rolex</a></h1>
+          <nav>
+            <ul class="gnb">
+              <li class="dropdown">
+                <a href="#" class="dropdown-cont"><b>롤렉스 세계</b></a>
+              </li>
+              <li class="dropdown" class="dropdown-cont">
+                <a href="#"><b>컬렉션</b></a>
+              </li>
+              <li class="dropdown" class="dropdown-cont">
+                <a href="#"><b>공식 판매점 찾기</b></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu" onclick="showLayer_menu();"><img src="../resources/Menu.png">메뉴 바
+          </div>
+        </div>
+        <div id="fade" class="black_background"></div>
+            <div id="sub_menu" style="white-space: nowrap;">
+                <div class="top">
+                  <a href="./index.html">Rolex</a>
+                  <a href="#/" onclick = "close_menu();">X</a>
+                </div>
+                <div class="give_mg">
+                  <div class="middle_1">
+                    <p><input type="text" placeholder="롤렉스 웹사이트 검색"></p>
+                    <p><a href="#" class="search">검색</a></p>
+                    <p>
+                      <a href="#" class="selection" onclick="showLayer_sel();">나의 셀렉션</a>
+                    </p>
+                      <div id="selection_area">
+                        <div class="top">
+                          <a href="./index.html">Rolex</a>
+                          <a href="#/" onclick = "close_sel();">X</a>
+                        </div>
+                        <div class="give_mg">
+                          <div class="middle_1">
+                            <p class="selec"><input type="text" placeholder="나의 셀렉션"></p>
+                            <p><a href="#" class="share_btn">공유하기</a></p>
+                          </div>
+                          <div class="watch_1">
+                            <li>
+                              <a href=""><img src="../resources/셀렉션_1.png"></a>
+                            </li>
+                            <li>
+                              <a href=""><img src="../resources/셀렉션_2.png"></a>
+                            </li>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <p><a href="" class="marker color_"><img src="../resources/marker.png">롤렉스 공식 판매점 찾기</a></p>
+                  <div class="middle_2">
+                      <ul class="watch_list">
+                        <div class="watch_1">
+                          <li><a href=""><img src="../resources/watch_airking.png">
+                            <div class="watch_text">
+                              <p>AIR-kING</p>
+                              <p>비행을 위한 시계</p>
+                            </div>
+                          </a></li>
+                          <li><a href=""><img src="../resources/watch_gmtmaster.png">
+                            <div class="watch_text right">
+                              <p>GMT-MASTER II</p>
+                              <p>코스모폴리탄을 위한 시계</p>
+                            </div>
+                          </a></li>
+                        </div>
+                        <div class="watch_2">
+                          <li><a href=""><img src="../resources/watch_daydate.png">
+                            <div class="watch_text">
+                              <p>DAY-DATE</p>
+                              <p>품격 있는 시계의 상징</p>
+                            </div>
+                          </a></li>
+                          <li><a href=""><img src="../resources/watch_yachtmaster.png">
+                            <div class="watch_text right">
+                              <p>YACHT-MASTER</p>
+                              <p>바다를 누비는 이들을 위한 시계</p>
+                            </div>
+                          </a></li> 
+                        </div>
+                      </ul>
+                  </div>
+                  <div class="bottom">
+                    <p class="plus_bar_"><a href="">롤렉스 세계</a></p>
+                    <p class="plus_bar_"><a href="">컬렉션</a></p>
+                    <p>
+                      <ul class="service plus_bar_">
+                        <li class="color_"><a href="">롤렉스 시계 구입하기</a></li>
+                        <li class="color_"><a href="">공식 판매점 찾기</a></li>
+                        <li class="color_"><a href="">시계관리 & 서비스</a></li>
+                      </ul>
+                    </p>
+                    <p  class="plus_bar_"><a href="">Rolex.org에 대해</a></p>
+                  </div>
+                </div>
+            </div>
+            <!-- 헤더 끝 -->
+        <div class="swiper-container container">
+            <div class="swiper-wrapper">
+      
+                <!-- 슬라이드 01 구간 시작 -->
+                    <div class="swiper-slide">
+                        <div class="slide01">
+                            <div class="modal-wrapper">
+                                 <button type='button' id="modal_btn"><p>매장 안내</p></button>
+                                <div class="black_bg">
+                                    <div class="modal_wrap">
+                                        <div class="modal_close"><a href="#">close</a>
+                                        </div>
+                                        <div class="storeList">
+                                            <div class="store">
+                                                <p class="tit">크로노다임</p>
+                                                <br>
+                                                <div class="storeAd"> 
+                                                <p>대한민국 서울시 남대문로 73</p>
+                                                <p>에비뉴엘 빌딩 2층</p>
+                                                <br>
+                                                <span>04533</span>
+                                                </div>
+                                            </div>
+                                            <div class="store">
+                                                <p class="tit">명보사</p>
+                                                <br>
+                                                <div class="storeAd"> 
+                                                <p>대한민국 부산 센텀남대로 35</p>
+                                                <p>신세계 센텀시티 1층</p>
+                                                <br>
+                                                <span>48058</span>
+                                                </div>
+                                            </div>
+                                            <div class="store">
+                                                <p class="tit">홍보시계</p>
+                                                <br>
+                                                <div class="storeAd"> 
+                                                <p>대한민국 부산 가야대로 772</p>
+                                                <p>롯대백화점 부산본점 1층</p>
+                                                <br>
+                                                <span>47285</span>
+                                                </div>
+                                            </div>
+                                            <div class="store">
+                                                <p class="tit">신라면세점 제주점</p>
+                                                <br>
+                                                <div class="storeAd"> 
+                                                <p>신라면세점 제주점 2F</p>
+                                                <p>대한민국 제주도 제주시 노연로 69</p>
+                                                <br>
+                                                <span>63131</span>
+                                                </div>
+                                            </div>
+                                            <div class="store">
+                                                <p class="tit">카이로스 시계</p>
+                                                <br>
+                                                <div class="storeAd"> 
+                                                <p>대한민국 서울시 영종로 9</p>
+                                                <p>신세계 타임스퀘어점 1층</p>
+                                                <br>
+                                                <span>07305</span>
+                                                </div>
+                                            </div>
+                                            <div class="store">
+                                                <p class="tit">현대시계</p>
+                                                <br>
+                                                <div class="storeAd"> 
+                                                <p>대한민국 서울시 테헤란로 517</p>
+                                                <p>현대백화점 무역센터점 2층</p>
+                                                <br>
+                                                <span>06164</span>
+                                                </div>
+                                            </div>
+                                            <div class="store">
+                                                <p class="tit">나우워치</p>
+                                                <br>
+                                                <div class="storeAd"> 
+                                                <p>대한민국 서울시 올림픽로 300</p>
+                                                <p>롯데백화점 에비뉴엘 월드타워점 1층</p>
+                                                <br>
+                                                <span>05551</span>
+                                                </div>
+                                            </div>
+                                            <div class="store">
+                                                <p class="tit">롯데면세점 월드타워점</p>
+                                                <br>
+                                                <div class="storeAd"> 
+                                                <p>대한민국 부산 가야대로 772</p>
+                                                <p>롯대백화점 부산본점 1층</p>
+                                                <br>
+                                                <span>47285</span>
+                                                </div>
+                                            </div>
+                                            <div class="store">
+                                                <p class="tit">우노와치</p>
+                                                <br>
+                                                <div class="storeAd"> 
+                                                <p>대한민국 서울시 압구정로 165</p>
+                                                <p>현대백화점 압구정본점 2층</p>
+                                                <br>
+                                                <span>06001</span>
+                                                </div>
+                                            </div>
+                                            <div class="store">
+                                                <p class="tit">명보시계</p>
+                                                <br>
+                                                <div class="storeAd"> 
+                                                <p>대한민국 대구 동부로 149</p>
+                                                <p>신세계 백화점 대구점 1층</p>
+                                                <br>
+                                                <span>41229</span>
+                                                </div>
+                                            </div>
+                                            <div class="store">
+                                                <p class="tit">그리니치</p>
+                                                <br>
+                                                <div class="storeAd"> 
+                                                <p>대한민국 서울시 소공로 63</p>
+                                                <p>신세계 백화점 본점 B1층</p>
+                                                <br>
+                                                <span>04530</span>
+                                                </div>
+                                            </div>
+                                            <div class="store">
+                                                <p class="tit">동화시계</p>
+                                                <br>
+                                                <div class="storeAd"> 
+                                                <p>대한민국 대전 서구 대덕대로 211</p>
+                                                <p>갤러리아 타임월드 1F층</p>
+                                                <br>
+                                                <span>35229</span>
+                                                </div>
+                                            </div>
+                                             </div>
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 검색엔진 컨테이너 -->
+                            <div class="search-container">
+                                <div class="searchBox">
+
+                                <div class="searchTit">
+                                대한민국의<br>롤렉스 공식 판매점
+                                </div>
+
+                                <!-- 공식 판매점 찾기 검색창 -->
+                                <div class="mapSc">
+                                    <div class="sc1">
+                                    <input class="sc2"
+                                    type="text"
+                                    placeholder="검색"
+                                    aria-label="판매점 또는 위치 찾기"
+                                    >
+                                    </div>
+                                    <!-- 검색버튼 -->
+                                    <div class="scBtn">
+                                        <button title="검색하기" class="scBtn-arrow">
+                                            <svg viewBox="" aria-hidden="true" alt="">
+                                            <path d="M19,11H7.14l3.63-4.36A1,1,0,1,0,9.23,5.36l-5,6a1.19,1.19,0,0,0-.09.15c0,.05,0,.08-.07.13A1,1,0,0,0,4,12H4a1,1,0,0,0,.07.36c0,.05,0,.08.07.13a1.19,1.19,0,0,0,.09.15l5,6A1,1,0,0,0,10,19a1,1,0,0,0,.64-.23,1,1,0,0,0,.13-1.41L7.14,13H19a1,1,0,0,0,0-2Z">
+                                            </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+ 
+                                <!-- 검색버튼 끝-->
+                                <!-- 내 위치 찾기 시작 -->
+                                <div class="scMysite">
+                                    <button title="내 위치 찾기" class="markBtn">
+                                        <svg height="15" width="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" alt="" class="markIcon">
+                                        <path d="m12.3 4.8c0-2.7-2.2-4.8-4.8-4.8-2.7 0-4.8 2.2-4.8 4.8s0 0 0 0c0 1.2.3 2.3.9 3.2.7 1.2 4 6.9 4 6.9s3.1-5.3 3.9-6.8c.5-1 .8-2 .8-3.3 0 .1 0 .1 0 0zm-2 0c0 1.6-1.3 2.8-2.8 2.8-1.6 0-2.8-1.3-2.8-2.8s1.2-2.8 2.8-2.8 2.8 1.3 2.8 2.8z">
+                                        </path>
+                                        </svg>
+                                    <span class="markTit">내 위치 찾기</span>
+                                    </button>
+                                </div>
+                            </div>
+                                <!-- 내 위치 찾기 끝 -->
+                                <!-- 공식 판매점 찾기 검색창 끝 -->
+
+                                <!-- 구글지도 -->
+                                <div class="googleMap">
+                                    <iframe id="mapView" 
+                                            width="100%"
+                                            height="500"
+                                            style="border:0"
+                                            loading="lazy"
+                                            allowfullscreen
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCWfc-XAfBnJ0wEptBIhsnRkmmkv6kJt_c
+                                            &q=크로노타임=동화시계 ">
+                                    </iframe>
+                                </div>
+                            </div>
+                            <!-- 검색엔진 컨테이너 끝-->
+                        </div>
+                    </div>
+            
+                <!-- 슬라이드 01 구간 끝 -->
+
+                <!-- 슬라이드 02 구간 시작 -->
+                <div class="swiper-slide">
+                    <div class="slide02">
+
+                        <div class="text">
+                            <p class="textTit">‘롤렉스 공식 판매점’만이 롤렉스 시계를 판매하며<br> 애프터 세일즈 서비스를 제공합니다.</p>
+
+                            <p class="textSub">전문적인 기술과 노하우, 롤렉스 고유의 장비를 가진 공식 판매점은 취급하는 모든 시계와 부품들이 정품임을 보증합니다.<br> 롤렉스 공식 판매점을 통해 평생 동안 함께 할 롤렉스 시계를 만나보시기 바랍니다.</p>
+                        </div>
+                        
+                        <div class="buyArea">
+                            <div class="img-container">
+                                <div class="img-BKbox"></div>
+                                <img src="../resources/rolexmap_buy.webp" alt="구입하기배경이미지"/>
+                            </div>
+                            <div class="buyText">
+                                <p class="buyTit">롤렉스 시계 구입하기</p>
+                                <div class="buybtn1">
+                                    <a aria-label="롤렉스 시계 구입하기 - 컬렉션"
+                                    href=" " class="buyImg">
+                                    <span class="buybtn2">자세히 보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 슬라이드 02 구간 끝 -->
+                <!-- 푸터 -->
+                <div class="swiper-slide footer_container"> 
+                    <div class="foot_area">
+                        <div class="share">
+                          <h2>이 페이지 공유하기</h2>
+                          <div class="share_container">
+                          <ul class="share_image">
+                            <li><a href="#">트위터</a></li>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">핀터레스트</a></li>
+                            <li><a href="#">링크드인</a></li>
+                            <li><a href="#">공유 패널</a></li>
+                            <li><a href="#">자세히 보기</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                        < class="foot_container">
+                        <div class="foot_list clear">
+                          <div class="foot_cont">
+                            <p class="plus_bar">롤렉스 세계</p>
+                            <ul class="foot_item">
+                              <li><a href="#">스포츠와 예술, 경험</a></li>
+                            </ul>
+                            <p class="plus_bar">서비스</p>
+                            <ul class="foot_item">
+                              <li><a href="#">롤렉스 시계 구입하기</a></li>
+                              <li><a href="#">공식 판매점 찾기</a></li>
+                              <li><a href="#">시계 관리 & 서비스</a></li>
+                              <li><a href="#">나의 셀렉션</a></li>
+                              <li><a href="#">자주 묻는 질문</a></li>
+                              <li class="news_room">
+                                <a href="#"><img src="../resources/뉴스룸_icon.png" />뉴스룸</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="foot_cont">
+                            <p class="plus_bar">컬렉션</p>
+                            <ul class="foot_item">
+                              <li><a href="#">Air-King</a></li>
+                              <li><a href="#">Cosmograph Daytona</a></li>
+                              <li><a href="#">Datejust</a></li>
+                              <li><a href="#">Lady-Datejust</a></li>
+                              <li><a href="#">Day-Date</a></li>
+                              <li><a href="#">Explorer</a></li>
+                              <li><a href="#">GMT-Master II</a></li>
+                              <li><a href="#">Milgauss</a></li>
+                              <li><a href="#">Oyster Perpetual</a></li>
+                              <li><a href="#">Sea-Dweller</a></li>
+                              <li><a href="#">Sky-Dweller</a></li>
+                              <li><a href="#">Submariner</a></li>
+                              <li><a href="#">Yacht-Master</a></li>
+                              <li><a href="#">Cellini</a></li>
+                            </ul>
+                          </div>
+                          <div class="foot_cont">
+                            <p class="plus_bar">법적 고지</p>
+                            <ul class="foot_item">
+                              <li><a href="#">이용약관</a></li>
+                              <li><a href="#">개인 정보 고지</a></li>
+                              <li><a href="#">쿠키</a></li>
+                            </ul>
+                            <p class="plus_bar">미디어</p>
+                            <ul class="foot_item">
+                              <li><a href="#">바탕화면</a></li>
+                              <li><a href="#">브로셔</a></li>
+                              <li><a href="#">사용자 가이드</a></li>
+                            </ul>     
+                          </div>
+                        </div>
+                        <div class="foot_bottom">
+                          <ul class="fb_list">
+                            <li class="fb_list1">
+                              <a href="#"
+                                ><img src="../resources/뉴스룸_icon.png" />Rolex.org에 대한 브랜드의
+                                헌신</a>
+                            </li>
+                          
+                            <li><a href="" id="toTop">위로</a></li>
+                          </ul>
+                        </div>
+                    </div>    
+                    <!-- 푸터 끝  -->
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+<!-- footer기능 -->
+<script>
+    w3.includeHTML();
+</script>
+<!-- 매장안내 버튼기능 -->
+<script>
+    window.onload = function() {
+ 
+    function onClick() {
+        document.querySelector('.modal_wrap').style.display ='block';
+        document.querySelector('.black_bg').style.display ='block';
+    }   
+    function offClick() {
+        document.querySelector('.modal_wrap').style.display ='none';
+        document.querySelector('.black_bg').style.display ='none';
+    }
+ 
+    document.getElementById('modal_btn').addEventListener('click', onClick);
+    document.querySelector('.modal_close').addEventListener('click', offClick);
+ 
+};
+</script>
+<!-- swiper 기능 -->
+<!-- <script src="../resources/swiper/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper(".swiper-container", {
+        direction: "vertical",
+        slidesPerView: 'auto',
+        speed: 1000,
+        touchRatio: 0,
+        allowTouchMove: false,
+        mousewheel: true,
+        pagination: {
+            el: ".progressbar",
+            type: "progressbar",
+        },
+    });
+    var swiper_fraction = new Swiper(".swiper-container", {
+        direction : "vertical",
+        pagination : {
+            el: ".fraction",
+            type: 'fraction',
+        }
+    });
+    swiper.controller.control = swiper_fraction;
+
+    var swiper2 = new Swiper(".swiper-container2", {
+        slidesPerView: 3,
+        spaceBetween: 120,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    var swiper3 = new Swiper(".swiper-container3", {
+        slidesPerView: 3,
+        spaceBetween: 120,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+        </script> -->
+
+</html>
