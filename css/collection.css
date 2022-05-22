@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "MinSans-Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "MinSans-Medium", "inter";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 1080px;
+}
+
+html,
+body,
+.wrapper,
+.swiper-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Slide01 */
+.back {
+  background-color: rgb(33, 33, 33);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.back .box1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0px;
+  overflow: hidden;
+}
+.back .box1 .media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.back .media .collectionVideo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.opac {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.5);
+  transition: background 0.5s ease 0;
+}
+.slide01 .text_box {
+  position: relative;
+  display: flex;
+  top: 70%;
+  left: 10%;
+  flex-direction: column;
+  align-items: baseline;
+  align-content: space-between;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+.text_box .txtIn {
+  justify-content: center;
+}
+.txtIn #text {
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.txtIn #text h1 {
+  font-size: 55px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.txtIn #text h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+/* Slide02 시작 */
+.slide02 .text_box {
+  position: relative;
+  top: 10%;
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.slide02 .text_box h2 {
+  font-size: 30px;
+  color: #1a5c3b;
+  margin-bottom: 30px;
+  line-height: 40px;
+  width: 40%;
+  padding-left: 3%;
+}
+.text_box .sub {
+  font-size: 16px;
+  line-height: 21px;
+  color: black;
+  width: 43%;
+  padding-top: 5px;
+}
+.text_box span {
+  display: inline-block;
+}
+.pic_box {
+  position: relative;
+  top: 17%;
+  height: 507px;
+  width: 100%;
+}
+.pic_box .backgroundBox {
+  height: 100%;
+  background-color: rgb(33, 33, 33);
+}
+.pic_box .backgroundBox .classic_txt {
+  position: absolute;
+  top: 17%;
+  left: 9%;
+}
+.pic_box .backgroundBox .classic_txt p {
+  color: #907127;
+  font-size: 25px;
+}
+.pic_box .backgroundBox .slide_wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 1299px;
+  height: 314px;
+  top: 30%;
+  left: 22px;
+  overflow: hidden;
+}
+.slide02 .slide_wrapper .slide_pic {
+  width: 1950px;
+  position: absolute;
+  list-style: none;
+  transition: transform 0.5s;
+}
+.pic_box .backgroundBox .slide_wrapper li {
+  position: relative;
+  float: left;
+  margin-right: 45px;
+}
+.backgroundBox .slide_wrapper li img {
+  width: 280px;
+  height: 333px;
+  filter: brightness(90%);
+}
+.slide03 .slide_wrapper .slide_pic2 {
+  width: 2600px;
+  position: absolute;
+  list-style: none;
+  transition: transform 0.5s;
+}
+
+.slide03 .pic_box2 {
+  top: -1%;
+}
+.slide03 .logo_history {
+  width: 50%;
+  height: 224px;
+  margin: 40px auto;
+}
+.slide03 .logo_history #logo_img {
+  text-align: center;
+}
+.slide03 .logo_history #logo_img img {
+  width: 155px;
+  height: 100px;
+}
+.slide03 .logo_history #logo_txt {
+  text-align: center;
+  margin-top: 10px;
+  color: #1a5c3b;
+}
+.pic_box .backgroundBox .slide_wrapper li .watch_namebox {
+  position: absolute;
+  color: #fff;
+  bottom: 35px;
+  left: 20px;
+}
+.pic_box .backgroundBox .slide_wrapper li .watch_namebox .watch_name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.slide_wrapper .watch_namebox .watch_explain {
+  font-weight: 400;
+  font-size: 12px;
+}
+/*좌우 슬라이드 버튼*/
+.pic_box .backgroundBox .slide_wrapper .arrows {
+  position: absolute;
+  width: 1220px;
+  height: 30px;
+  line-height: 40vh;
+  top: 150px;
+  left: 20px;
+}
+.arrows button.prev,
+.arrows button.next,
+.arrows button.prev2,
+.arrows button.next2 {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.arrows > button {
+  border: 0;
+  outline: 0;
+}
+.pic_box .backgroundBox .slide_wrapper .arrows button.prev,
+.arrows button.prev2 {
+  float: left;
+  background: url("../resources/left-arrow.png") no-repeat;
+  background-size: 80% 80%;
+}
+.pic_box .backgroundBox .slide_wrapper .arrows .next,
+.arrows .next2 {
+  float: right;
+  background: url("../resources/right-arrow.png") no-repeat;
+  background-size: 80% 80%;
+}
+/* Slide04 시작 */
+.slide04 .pro_txt {
+  text-align: left;
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  top: 10%;
+}
+.slide04 .pro_txt h2 {
+  color: #1a5c3b;
+  width: 50%;
+  font-size: 30px;
+}
+.slide04 .pro_txt .sub {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.slide04 .swiper-container2 {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  height: 430px;
+  cursor: pointer;
+}
+.slide04 .watchPic {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide04 .watchPic img {
+  width: 100%;
+  height: 100%;
+}
+.slide04 .container2 .watchPic .watch_namebox {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.slide04 .container2 .watchPic .watch_namebox .watch_name {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
