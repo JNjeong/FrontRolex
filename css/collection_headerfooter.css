@@ -8,7 +8,7 @@ a {
 }
 body {
   width: 100%;
-  height: 100%;
+  /*   height: 1020px; */
 }
 * {
   margin: 0;
@@ -45,17 +45,13 @@ nav ul li {
 }
 
 /*-------------- 네비게이션 바 투명일 때 --------------*/
-.header_area {
-  background: white;
-}
-
-.header_area > h1 > a {
+header > .header_area > h1 > a {
   display: block;
-  background: url(../resources/롤렉스로고.png);
+  background: url(../resources/롤렉스로고_white.png);
   width: 62px;
   height: 35px;
   position: absolute;
-  top: 20px;
+  top: 25%;
   left: 100px;
   text-indent: -9999px;
   overflow: hidden;
@@ -64,7 +60,6 @@ nav ul li {
 .header_area > nav {
   margin-left: 600px;
 }
-/* .header_area:hover { */
 
 .dropdown {
   height: 75px;
@@ -73,7 +68,7 @@ nav ul li {
 
 .dropdown > a {
   margin-right: 120px;
-  color: #242424;
+  color: white;
 }
 
 .menu {
@@ -88,6 +83,10 @@ nav ul li {
   right: 100px;
   text-indent: -9999px;
   overflow: hidden;
+  filter: invert(100%) sepia(5%) saturate(7449%) hue-rotate(265deg)
+    brightness(107%) contrast(112%);
+}
+.menu:hover {
   filter: invert(29%) sepia(6%) saturate(4158%) hue-rotate(97deg)
     brightness(96%) contrast(93%);
 }
@@ -96,16 +95,26 @@ nav ul li {
 .header_area {
   transition: background, 0.8s;
 }
+.header_area:hover {
+  background: white;
+}
+.header_area:hover a {
+  color: #242424;
+}
 
 .dropdown > a:hover {
   color: #1a5c3b;
+}
+
+.header_area:hover h1 > a {
+  background: url(../resources/롤렉스로고.png);
 }
 
 .header_area:hover .menu {
   filter: invert(8%) sepia(25%) saturate(0%) hue-rotate(202deg) brightness(109%)
     contrast(89%);
 }
-.header_area .menu :hover {
+.header_area .menu:hover {
   filter: invert(26%) sepia(17%) saturate(1717%) hue-rotate(97deg)
     brightness(97%) contrast(87%);
 }
