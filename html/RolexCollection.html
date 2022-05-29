@@ -5,122 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>롤렉스 시계 컬렉션</title>
+
     <link rel="stylesheet" href="../swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="../css/collection.css" />
     <link rel="stylesheet" href="../css/swiper-Pagination.css" />
-    <link rel="stylesheet" href="../css/collection_headerfooter.css" />
-    <link rel="shortcut icon" href="../resources/favicon.ico"/>
-    
+    <link rel="stylesheet" href="../css/headerfooter.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../js/headerfooter.js"></script>
   </head>
 
   <body>
     <div class="wrapper">
-
-      <div class="header_area clear" style="white-space: nowrap;">
-        <h1><a href="./index.html">Rolex</a></h1>
-        <nav>
-          <ul class="gnb">
-            <li class="dropdown">
-              <a href="#" class="dropdown-cont"><b>롤렉스 세계</b></a>
-            </li>
-            <li class="dropdown" class="dropdown-cont">
-              <a href="#"><b>컬렉션</b></a>
-            </li>
-            <li class="dropdown" class="dropdown-cont">
-              <a href="#"><b>공식 판매점 찾기</b></a>
-            </li>
-          </ul>
-        </nav>
-        <div class="menu" onclick="showLayer_menu();"><img src="../resources/Menu.png">메뉴 바
-        </div>
+      <div class="header">
+        <header w3-include-html="header.html"></header>
       </div>
-      <div id="fade" class="black_background"></div>
-          <div id="sub_menu" style="white-space: nowrap;">
-              <div class="top">
-                <a href="./index.html">Rolex</a>
-                <a href="#/" onclick = "close_menu();">X</a>
-              </div>
-              <div class="give_mg">
-                <div class="middle_1">
-                  <p><input type="text" placeholder="롤렉스 웹사이트 검색"></p>
-                  <p><a href="#" class="search">검색</a></p>
-                  <p>
-                    <a href="#" class="selection" onclick="showLayer_sel();">나의 셀렉션</a>
-                  </p>
-                    <div id="selection_area">
-                      <div class="top">
-                        <a href="./index.html">Rolex</a>
-                        <a href="#/" onclick = "close_sel();">X</a>
-                      </div>
-                      <div class="give_mg">
-                        <div class="middle_1">
-                          <p class="selec"><input type="text" placeholder="나의 셀렉션"></p>
-                          <p><a href="#" class="share_btn">공유하기</a></p>
-                        </div>
-                        <div class="watch_1">
-                          <li>
-                            <a href=""><img src="../resources/셀렉션_1.png"></a>
-                          </li>
-                          <li>
-                            <a href=""><img src="../resources/셀렉션_2.png"></a>
-                          </li>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <p><a href="" class="marker color_"><img src="../resources/marker.png">롤렉스 공식 판매점 찾기</a></p>
-                <div class="middle_2">
-                    <ul class="watch_list">
-                      <div class="watch_1">
-                        <li><a href=""><img src="../resources/watch_airking.png">
-                          <div class="watch_text">
-                            <p>AIR-kING</p>
-                            <p>비행을 위한 시계</p>
-                          </div>
-                        </a></li>
-                        <li><a href=""><img src="../resources/watch_gmtmaster.png">
-                          <div class="watch_text right">
-                            <p>GMT-MASTER II</p>
-                            <p>코스모폴리탄을 위한 시계</p>
-                          </div>
-                        </a></li>
-                      </div>
-                      <div class="watch_2">
-                        <li><a href=""><img src="../resources/watch_daydate.png">
-                          <div class="watch_text">
-                            <p>DAY-DATE</p>
-                            <p>품격 있는 시계의 상징</p>
-                          </div>
-                        </a></li>
-                        <li><a href=""><img src="../resources/watch_yachtmaster.png">
-                          <div class="watch_text right">
-                            <p>YACHT-MASTER</p>
-                            <p>바다를 누비는 이들을 위한 시계</p>
-                          </div>
-                        </a></li> 
-                      </div>
-                    </ul>
-                </div>
-                <div class="bottom">
-                  <p class="plus_bar_"><a href="">롤렉스 세계</a></p>
-                  <p class="plus_bar_"><a href="">컬렉션</a></p>
-                  <p>
-                    <ul class="service plus_bar_">
-                      <li class="color_"><a href="">롤렉스 시계 구입하기</a></li>
-                      <li class="color_"><a href="">공식 판매점 찾기</a></li>
-                      <li class="color_"><a href="">시계관리 & 서비스</a></li>
-                    </ul>
-                  </p>
-                  <p  class="plus_bar_"><a href="">Rolex.org에 대해</a></p>
-                </div>
-              </div>
-          </div>
-          <!-- 헤더 끝 -->
-
-
-
-
-      <div class="swiper-container">
+      <div class="swiper-container container">
         <div class="swiper-wrapper">
           <!-- swiper-wrapper, swiper-slide, swiper-slide 이름은 변경하지 말아주세요. -->
 
@@ -524,85 +425,94 @@
           </div>
 
           <!-- footer 구역 -->
-          <div class="swiper-slide footer_container">
-            <div class="foot_area">
-              <div class="share">
-                <h2>이 페이지 공유하기</h2>
-                <div class="share_container">
-                <ul class="share_image">
-                  <li><a href="#">트위터</a></li>
-                  <li><a href="#">페이스북</a></li>
-                  <li><a href="#">핀터레스트</a></li>
-                  <li><a href="#">링크드인</a></li>
-                  <li><a href="#">공유 패널</a></li>
-                  <li><a href="#">자세히 보기</a></li>
-                </ul>
-              </div>
-            </div>
-              <div class= "foot_container">
-              <div class="foot_list clear">
-                <div class="foot_cont">
-                  <p class="plus_bar">롤렉스 세계</p>
-                  <ul class="foot_item">
-                    <li><a href="#">스포츠와 예술, 경험</a></li>
+            <!-- footer 구역 -->
+            <div class="swiper-slide footer_container">
+              <div class="foot_area">
+                <div class="share">
+                  <h2>이 페이지 공유하기</h2>
+                  <div class="share_container">
+                  <ul class="share_image">
+                    <li><a href="#">트위터</a></li>
+                    <li><a href="#">페이스북</a></li>
+                    <li><a href="#">핀터레스트</a></li>
+                    <li><a href="#">링크드인</a></li>
+                    <li><a href="#">공유 패널</a></li>
+                    <li><a href="#">자세히 보기</a></li>
                   </ul>
-                  <p class="plus_bar">서비스</p>
-                  <ul class="foot_item">
-                    <li><a href="#">롤렉스 시계 구입하기</a></li>
-                    <li><a href="#">공식 판매점 찾기</a></li>
-                    <li><a href="#">시계 관리 & 서비스</a></li>
-                    <li><a href="#">나의 셀렉션</a></li>
-                    <li><a href="#">자주 묻는 질문</a></li>
-                    <li class="news_room">
-                      <a href="#"><img src="../resources/뉴스룸_icon.png" />뉴스룸</a>
+                </div>
+              </div>
+                <div class= "foot_container">
+                <div class="foot_list clear">
+                  <div class="foot_cont">
+                    <p class="plus_bar">롤렉스 세계</p>
+                    <ul class="foot_item">
+                      <li><a href="#">스포츠와 예술, 경험</a></li>
+                    </ul>
+                    <p class="plus_bar">서비스</p>
+                    <ul class="foot_item">
+                      <li><a href="#">롤렉스 시계 구입하기</a></li>
+                      <li><a href="#">공식 판매점 찾기</a></li>
+                      <li><a href="#">시계 관리 & 서비스</a></li>
+                      <li><a href="#">나의 셀렉션</a></li>
+                      <li><a href="#">자주 묻는 질문</a></li>
+                      <li class="news_room">
+                        <a href="#"><img src="../resources/뉴스룸_icon.png" />뉴스룸</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="foot_cont">
+                    <p class="plus_bar">컬렉션</p>
+                    <ul class="foot_item">
+                      <li><a href="#">Air-King</a></li>
+                      <li><a href="#">Cosmograph Daytona</a></li>
+                      <li><a href="#">Datejust</a></li>
+                      <li><a href="#">Lady-Datejust</a></li>
+                      <li><a href="#">Day-Date</a></li>
+                      <li><a href="#">Explorer</a></li>
+                      <li><a href="#">GMT-Master II</a></li>
+                      <li><a href="#">Milgauss</a></li>
+                      <li><a href="#">Oyster Perpetual</a></li>
+                      <li><a href="#">Sea-Dweller</a></li>
+                      <li><a href="#">Sky-Dweller</a></li>
+                      <li><a href="#">Submariner</a></li>
+                      <li><a href="#">Yacht-Master</a></li>
+                      <li><a href="#">Cellini</a></li>
+                    </ul>
+                  </div>
+                  <div class="foot_cont">
+                    <p class="plus_bar">법적 고지</p>
+                    <ul class="foot_item">
+                      <li><a href="#">이용약관</a></li>
+                      <li><a href="#">개인 정보 고지</a></li>
+                      <li><a href="#">쿠키</a></li>
+                    </ul>
+                    <p class="plus_bar">미디어</p>
+                    <ul class="foot_item">
+                      <li><a href="#">바탕화면</a></li>
+                      <li><a href="#">브로셔</a></li>
+                      <li><a href="#">사용자 가이드</a></li>
+                    </ul>     
+                  </div>
+                </div>
+                <div class="foot_bottom">
+                  <ul class="fb_list">
+                    <li class="fb_list1">
+                      <a href="#"
+                        ><img src="../resources/뉴스룸_icon.png" />Rolex.org에 대한 브랜드의
+                        헌신</a>
                     </li>
+                    <li><a href="" id="toTop">위로</a></li>
                   </ul>
                 </div>
-                <div class="foot_cont">
-                  <p class="plus_bar">컬렉션</p>
-                  <ul class="foot_item">
-                    <li><a href="#">Air-King</a></li>
-                    <li><a href="#">Cosmograph Daytona</a></li>
-                    <li><a href="#">Datejust</a></li>
-                    <li><a href="#">Lady-Datejust</a></li>
-                    <li><a href="#">Day-Date</a></li>
-                    <li><a href="#">Explorer</a></li>
-                    <li><a href="#">GMT-Master II</a></li>
-                    <li><a href="#">Milgauss</a></li>
-                    <li><a href="#">Oyster Perpetual</a></li>
-                    <li><a href="#">Sea-Dweller</a></li>
-                    <li><a href="#">Sky-Dweller</a></li>
-                    <li><a href="#">Submariner</a></li>
-                    <li><a href="#">Yacht-Master</a></li>
-                    <li><a href="#">Cellini</a></li>
-                  </ul>
-                </div>
-                <div class="foot_cont">
-                  <p class="plus_bar">법적 고지</p>
-                  <ul class="foot_item">
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인 정보 고지</a></li>
-                    <li><a href="#">쿠키</a></li>
-                  </ul>
-                  <p class="plus_bar">미디어</p>
-                  <ul class="foot_item">
-                    <li><a href="#">바탕화면</a></li>
-                    <li><a href="#">브로셔</a></li>
-                    <li><a href="#">사용자 가이드</a></li>
-                  </ul>     
-                </div>
-              </div>
-              <div class="foot_bottom">
-                <ul class="fb_list">
-                  <li class="fb_list1">
-                    <a href="#"
-                      ><img src="../resources/뉴스룸_icon.png" />Rolex.org에 대한 브랜드의
-                      헌신</a>
-                  </li>
-                  <li><a href="" id="toTop">위로</a></li>
-                </ul>
-              </div>
-          </div>
+            </div>
+            <!-- footer 구역 -->
+
+
+
+
+         <!--  <div class="swiper-slide footer">
+            <footer w3-include-html="footer.html"></footer>
+          </div> -->
           <!-- footer 구역 -->
         </div>
         <!-- .swiper-wrapper 종료 -->
@@ -615,10 +525,7 @@
     </div>
     <!--wrapper 종료  -->
 
-    <!-- script 부분 -->
-    <script src="../swiper/js/swiper.min.js"></script>
-    <script src="../js/headerfooter.js"></script>
-    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../../swiper/js/swiper.min.js"></script>
     <script>
       var swiper = new Swiper(".swiper-container", {
         direction: "vertical",
@@ -649,5 +556,8 @@
       });
     </script>
     <script src="../js/slide.js"></script>
+    <script>
+      w3.includeHTML();
+    </script>
   </body>
 </html>
